@@ -1,0 +1,775 @@
+/* ==========================================================================
+   HELLO HAREL — Design System Global CSS
+   Refonte 2026 — À injecter via Elementor > Custom CSS (Kit 1020)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   0. RESET — Supprimer l'ancien override qui bloquait TOUTES les animations
+   -------------------------------------------------------------------------- */
+/* IMPORTANT : supprimer cette règle existante dans le Custom CSS du Kit :
+   * { animation: none !important; transition: none !important; }
+*/
+
+/* --------------------------------------------------------------------------
+   1. CSS VARIABLES — Design Tokens
+   -------------------------------------------------------------------------- */
+:root {
+  /* Primary */
+  --hh-primary: #1d4ed8;
+  --hh-primary-dark: #1e3a8a;
+  --hh-primary-light: #3b82f6;
+  --hh-primary-50: #eff6ff;
+  --hh-primary-100: #dbeafe;
+
+  /* Accents */
+  --hh-emerald: #059669;
+  --hh-emerald-100: #d1fae5;
+  --hh-indigo: #4f46e5;
+  --hh-indigo-100: #e0e7ff;
+  --hh-amber: #d97706;
+  --hh-amber-100: #fef3c7;
+  --hh-red: #dc2626;
+  --hh-red-100: #fee2e2;
+  --hh-teal: #0d9488;
+  --hh-teal-100: #ccfbf1;
+  --hh-cyan: #0891b2;
+  --hh-cyan-100: #cffafe;
+  --hh-orange: #ea580c;
+  --hh-orange-100: #ffedd5;
+
+  /* Neutrals */
+  --hh-slate-50: #f8fafc;
+  --hh-slate-100: #f1f5f9;
+  --hh-slate-200: #e2e8f0;
+  --hh-slate-300: #cbd5e1;
+  --hh-slate-500: #64748b;
+  --hh-slate-700: #334155;
+  --hh-slate-900: #0f172a;
+
+  /* Shadows */
+  --hh-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --hh-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --hh-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --hh-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --hh-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --hh-shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  /* Spacing */
+  --hh-section-py: clamp(4rem, 8vw, 8rem);
+  --hh-container-max: 80rem;
+
+  /* Transitions */
+  --hh-transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --------------------------------------------------------------------------
+   2. TYPOGRAPHY — Inter font system
+   -------------------------------------------------------------------------- */
+body.elementor-default,
+body.elementor-default * {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+/* ---- Headings ---- */
+.elementor-widget-heading .elementor-heading-title,
+.elementor-widget-heading h1,
+.elementor-widget-heading h2,
+.elementor-widget-heading h3,
+.elementor-widget-heading h4 {
+  font-family: 'Inter', sans-serif !important;
+  color: var(--hh-slate-900);
+  letter-spacing: -0.025em;
+}
+
+h1.elementor-heading-title,
+.elementor-widget-heading h1.elementor-heading-title {
+  font-weight: 900 !important;
+  font-size: clamp(2.5rem, 5vw, 4rem) !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.03em;
+}
+
+h2.elementor-heading-title,
+.elementor-widget-heading h2.elementor-heading-title {
+  font-weight: 900 !important;
+  font-size: clamp(1.875rem, 4vw, 3rem) !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.025em;
+}
+
+h3.elementor-heading-title,
+.elementor-widget-heading h3.elementor-heading-title {
+  font-weight: 700 !important;
+  font-size: clamp(1.25rem, 2vw, 1.5rem) !important;
+  line-height: 1.3 !important;
+}
+
+h4.elementor-heading-title,
+.elementor-widget-heading h4.elementor-heading-title {
+  font-weight: 700 !important;
+  font-size: 1.125rem !important;
+  line-height: 1.4 !important;
+}
+
+/* ---- Body text ---- */
+.elementor-widget-text-editor,
+.elementor-widget-text-editor p,
+.elementor-widget-text-editor li {
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  line-height: 1.75 !important;
+  color: var(--hh-slate-500);
+}
+
+/* ---- Labels / Badges ---- */
+.hh-badge,
+.hh-label {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: inline-block;
+  padding: 0.375rem 1rem;
+  border-radius: 9999px;
+  background: var(--hh-primary-100);
+  color: var(--hh-primary);
+}
+
+/* --------------------------------------------------------------------------
+   3. GLOBAL LAYOUT — Sections & Containers
+   -------------------------------------------------------------------------- */
+/* Generous vertical padding on all top-level sections */
+.elementor-top-section,
+.e-con.e-parent {
+  padding-top: var(--hh-section-py) !important;
+  padding-bottom: var(--hh-section-py) !important;
+}
+
+/* Max width for boxed sections */
+.elementor-section-boxed > .elementor-container,
+.e-con-boxed > .e-con-inner {
+  max-width: var(--hh-container-max) !important;
+}
+
+/* Alternate section backgrounds */
+.hh-bg-white { background-color: #ffffff !important; }
+.hh-bg-slate { background-color: var(--hh-slate-50) !important; }
+.hh-bg-blue-light { background-color: var(--hh-primary-50) !important; }
+.hh-bg-dark {
+  background-color: var(--hh-slate-900) !important;
+  color: #ffffff;
+}
+.hh-bg-dark .elementor-heading-title { color: #ffffff !important; }
+.hh-bg-dark .elementor-widget-text-editor,
+.hh-bg-dark .elementor-widget-text-editor p { color: var(--hh-slate-300) !important; }
+
+/* Gradient overlays */
+.hh-gradient-blue {
+  background: linear-gradient(135deg, var(--hh-primary-50) 0%, #ffffff 100%) !important;
+}
+.hh-gradient-hero {
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.95) 100%) !important;
+}
+
+/* --------------------------------------------------------------------------
+   4. HEADER — Dark blue navigation (Template 1868)
+   -------------------------------------------------------------------------- */
+.elementor-1868 {
+  background: var(--hh-primary-dark) !important;
+}
+
+.elementor-1868 .elementor-section,
+.elementor-1868 .e-con {
+  background: transparent !important;
+}
+
+/* Navigation links */
+.elementor-1868 .e-n-menu-title-text,
+.elementor-1868 .e-n-menu-item > a,
+.elementor-1868 .elementor-widget-heading .elementor-heading-title {
+  color: #ffffff !important;
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 0.9375rem !important;
+  letter-spacing: 0 !important;
+  transition: color var(--hh-transition) !important;
+}
+
+.elementor-1868 .e-n-menu-title:hover .e-n-menu-title-text {
+  color: var(--hh-primary-100) !important;
+}
+
+/* Dropdown menus */
+.elementor-1868 .e-n-menu-content {
+  background: #ffffff !important;
+  border: 1px solid var(--hh-slate-200) !important;
+  border-radius: 1rem !important;
+  box-shadow: var(--hh-shadow-xl) !important;
+  padding: 1.5rem !important;
+}
+
+.elementor-1868 .e-n-menu-content .elementor-heading-title {
+  color: var(--hh-slate-900) !important;
+}
+
+.elementor-1868 .e-n-menu-content .elementor-widget-text-editor,
+.elementor-1868 .e-n-menu-content .elementor-widget-text-editor p {
+  color: var(--hh-slate-500) !important;
+}
+
+/* Header CTA button */
+.elementor-1868 .elementor-widget-jkit_button .jkit-button-wrapper a,
+.elementor-1868 .elementor-widget-button .elementor-button {
+  background: #ffffff !important;
+  color: var(--hh-primary-dark) !important;
+  font-weight: 700 !important;
+  font-size: 0.875rem !important;
+  border-radius: 0.75rem !important;
+  padding: 0.75rem 1.5rem !important;
+  border: none !important;
+  box-shadow: var(--hh-shadow-md) !important;
+  transition: all var(--hh-transition) !important;
+}
+
+.elementor-1868 .elementor-widget-jkit_button .jkit-button-wrapper a:hover,
+.elementor-1868 .elementor-widget-button .elementor-button:hover {
+  background: var(--hh-primary-50) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: var(--hh-shadow-lg) !important;
+}
+
+/* --------------------------------------------------------------------------
+   5. FOOTER — Dark slate (Template 1746)
+   -------------------------------------------------------------------------- */
+.elementor-1746 {
+  background: var(--hh-slate-900) !important;
+}
+
+.elementor-1746 .elementor-section,
+.elementor-1746 .elementor-background-overlay {
+  background: transparent !important;
+}
+
+.elementor-1746 .elementor-heading-title {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  margin-bottom: 1.25rem !important;
+}
+
+.elementor-1746 .elementor-nav-menu--main .elementor-item {
+  color: var(--hh-slate-300) !important;
+  font-size: 0.9375rem !important;
+  font-weight: 500 !important;
+  transition: color var(--hh-transition) !important;
+  padding: 0.25rem 0 !important;
+}
+
+.elementor-1746 .elementor-nav-menu--main .elementor-item:hover {
+  color: #ffffff !important;
+}
+
+.elementor-1746 .elementor-widget-text-editor,
+.elementor-1746 .elementor-widget-text-editor p {
+  color: var(--hh-slate-500) !important;
+  font-size: 0.875rem !important;
+}
+
+.elementor-1746 .elementor-social-icon {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 0.5rem !important;
+  transition: all var(--hh-transition) !important;
+}
+
+.elementor-1746 .elementor-social-icon:hover {
+  background: var(--hh-primary) !important;
+  transform: translateY(-2px) !important;
+}
+
+.elementor-1746 .elementor-social-icon i {
+  color: #ffffff !important;
+}
+
+/* --------------------------------------------------------------------------
+   6. BUTTONS — Primary & Secondary
+   -------------------------------------------------------------------------- */
+/* Primary button */
+.elementor-widget-button .elementor-button,
+.elementor-widget-jkit_button .jkit-button-wrapper a {
+  background: var(--hh-primary) !important;
+  color: #ffffff !important;
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  border: none !important;
+  border-radius: 0.75rem !important;
+  padding: 1rem 2rem !important;
+  box-shadow: var(--hh-shadow-lg), 0 4px 14px rgba(29, 78, 216, 0.35) !important;
+  transition: all var(--hh-transition) !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+}
+
+.elementor-widget-button .elementor-button:hover,
+.elementor-widget-jkit_button .jkit-button-wrapper a:hover {
+  background: var(--hh-primary-dark) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: var(--hh-shadow-xl), 0 8px 20px rgba(29, 78, 216, 0.4) !important;
+}
+
+/* Secondary button — add class .hh-btn-secondary in Elementor */
+.hh-btn-secondary .elementor-button,
+.hh-btn-secondary .jkit-button-wrapper a {
+  background: #ffffff !important;
+  color: var(--hh-slate-700) !important;
+  border: 1px solid var(--hh-slate-200) !important;
+  box-shadow: var(--hh-shadow-sm) !important;
+}
+
+.hh-btn-secondary .elementor-button:hover,
+.hh-btn-secondary .jkit-button-wrapper a:hover {
+  background: var(--hh-slate-50) !important;
+  border-color: var(--hh-slate-300) !important;
+  box-shadow: var(--hh-shadow-md) !important;
+}
+
+/* --------------------------------------------------------------------------
+   7. CARDS — Rounded, hoverable
+   -------------------------------------------------------------------------- */
+/* Icon boxes as cards */
+.elementor-widget-icon-box .elementor-icon-box-wrapper {
+  background: #ffffff;
+  border: 1px solid var(--hh-slate-200);
+  border-radius: 1.5rem !important;
+  padding: 2rem !important;
+  transition: all var(--hh-transition) !important;
+  box-shadow: var(--hh-shadow-sm);
+}
+
+.elementor-widget-icon-box .elementor-icon-box-wrapper:hover {
+  transform: translateY(-8px) scale(1.02) !important;
+  box-shadow: var(--hh-shadow-2xl) !important;
+  border-color: var(--hh-primary-100) !important;
+}
+
+/* Icon containers — colored pastels */
+.elementor-widget-icon-box .elementor-icon {
+  border-radius: 1rem !important;
+  padding: 1rem !important;
+  transition: all var(--hh-transition) !important;
+}
+
+/* Image boxes as cards */
+.elementor-widget-image-box .elementor-image-box-wrapper {
+  background: #ffffff;
+  border: 1px solid var(--hh-slate-200);
+  border-radius: 1.5rem !important;
+  overflow: hidden;
+  transition: all var(--hh-transition) !important;
+  box-shadow: var(--hh-shadow-sm);
+}
+
+.elementor-widget-image-box .elementor-image-box-wrapper:hover {
+  transform: translateY(-8px) scale(1.02) !important;
+  box-shadow: var(--hh-shadow-2xl) !important;
+}
+
+.elementor-widget-image-box .elementor-image-box-content {
+  padding: 1.5rem !important;
+}
+
+/* Image box titles */
+.elementor-widget-icon-box .elementor-icon-box-title,
+.elementor-widget-image-box .elementor-image-box-title {
+  font-weight: 700 !important;
+  color: var(--hh-slate-900) !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* Image/Icon box descriptions */
+.elementor-widget-icon-box .elementor-icon-box-description,
+.elementor-widget-image-box .elementor-image-box-description {
+  color: var(--hh-slate-500) !important;
+  font-weight: 500 !important;
+  line-height: 1.7 !important;
+}
+
+/* Generic card class — apply to any container */
+.hh-card {
+  background: #ffffff !important;
+  border: 1px solid var(--hh-slate-200) !important;
+  border-radius: 1.5rem !important;
+  padding: 2rem !important;
+  transition: all var(--hh-transition) !important;
+  box-shadow: var(--hh-shadow-sm) !important;
+}
+
+.hh-card:hover {
+  transform: translateY(-8px) scale(1.02) !important;
+  box-shadow: var(--hh-shadow-2xl) !important;
+  border-color: var(--hh-primary-100) !important;
+}
+
+/* --------------------------------------------------------------------------
+   8. ICON ACCENT COLORS — Apply as CSS class on icon-box widget
+   -------------------------------------------------------------------------- */
+.hh-accent-emerald .elementor-icon {
+  background: var(--hh-emerald-100) !important;
+  color: var(--hh-emerald) !important;
+}
+.hh-accent-emerald .elementor-icon i,
+.hh-accent-emerald .elementor-icon svg { color: var(--hh-emerald) !important; fill: var(--hh-emerald) !important; }
+.hh-accent-emerald .elementor-icon-box-wrapper:hover .elementor-icon {
+  background: var(--hh-emerald) !important;
+}
+.hh-accent-emerald .elementor-icon-box-wrapper:hover .elementor-icon i,
+.hh-accent-emerald .elementor-icon-box-wrapper:hover .elementor-icon svg {
+  color: #ffffff !important; fill: #ffffff !important;
+}
+
+.hh-accent-indigo .elementor-icon {
+  background: var(--hh-indigo-100) !important;
+  color: var(--hh-indigo) !important;
+}
+.hh-accent-indigo .elementor-icon i,
+.hh-accent-indigo .elementor-icon svg { color: var(--hh-indigo) !important; fill: var(--hh-indigo) !important; }
+.hh-accent-indigo .elementor-icon-box-wrapper:hover .elementor-icon {
+  background: var(--hh-indigo) !important;
+}
+.hh-accent-indigo .elementor-icon-box-wrapper:hover .elementor-icon i,
+.hh-accent-indigo .elementor-icon-box-wrapper:hover .elementor-icon svg {
+  color: #ffffff !important; fill: #ffffff !important;
+}
+
+.hh-accent-amber .elementor-icon {
+  background: var(--hh-amber-100) !important;
+  color: var(--hh-amber) !important;
+}
+.hh-accent-amber .elementor-icon i,
+.hh-accent-amber .elementor-icon svg { color: var(--hh-amber) !important; fill: var(--hh-amber) !important; }
+.hh-accent-amber .elementor-icon-box-wrapper:hover .elementor-icon {
+  background: var(--hh-amber) !important;
+}
+.hh-accent-amber .elementor-icon-box-wrapper:hover .elementor-icon i,
+.hh-accent-amber .elementor-icon-box-wrapper:hover .elementor-icon svg {
+  color: #ffffff !important; fill: #ffffff !important;
+}
+
+.hh-accent-red .elementor-icon {
+  background: var(--hh-red-100) !important;
+  color: var(--hh-red) !important;
+}
+.hh-accent-red .elementor-icon i,
+.hh-accent-red .elementor-icon svg { color: var(--hh-red) !important; fill: var(--hh-red) !important; }
+.hh-accent-red .elementor-icon-box-wrapper:hover .elementor-icon {
+  background: var(--hh-red) !important;
+}
+.hh-accent-red .elementor-icon-box-wrapper:hover .elementor-icon i,
+.hh-accent-red .elementor-icon-box-wrapper:hover .elementor-icon svg {
+  color: #ffffff !important; fill: #ffffff !important;
+}
+
+.hh-accent-teal .elementor-icon {
+  background: var(--hh-teal-100) !important;
+  color: var(--hh-teal) !important;
+}
+.hh-accent-teal .elementor-icon i,
+.hh-accent-teal .elementor-icon svg { color: var(--hh-teal) !important; fill: var(--hh-teal) !important; }
+.hh-accent-teal .elementor-icon-box-wrapper:hover .elementor-icon {
+  background: var(--hh-teal) !important;
+}
+.hh-accent-teal .elementor-icon-box-wrapper:hover .elementor-icon i,
+.hh-accent-teal .elementor-icon-box-wrapper:hover .elementor-icon svg {
+  color: #ffffff !important; fill: #ffffff !important;
+}
+
+.hh-accent-cyan .elementor-icon {
+  background: var(--hh-cyan-100) !important;
+  color: var(--hh-cyan) !important;
+}
+.hh-accent-cyan .elementor-icon i,
+.hh-accent-cyan .elementor-icon svg { color: var(--hh-cyan) !important; fill: var(--hh-cyan) !important; }
+.hh-accent-cyan .elementor-icon-box-wrapper:hover .elementor-icon {
+  background: var(--hh-cyan) !important;
+}
+.hh-accent-cyan .elementor-icon-box-wrapper:hover .elementor-icon i,
+.hh-accent-cyan .elementor-icon-box-wrapper:hover .elementor-icon svg {
+  color: #ffffff !important; fill: #ffffff !important;
+}
+
+.hh-accent-orange .elementor-icon {
+  background: var(--hh-orange-100) !important;
+  color: var(--hh-orange) !important;
+}
+.hh-accent-orange .elementor-icon i,
+.hh-accent-orange .elementor-icon svg { color: var(--hh-orange) !important; fill: var(--hh-orange) !important; }
+.hh-accent-orange .elementor-icon-box-wrapper:hover .elementor-icon {
+  background: var(--hh-orange) !important;
+}
+.hh-accent-orange .elementor-icon-box-wrapper:hover .elementor-icon i,
+.hh-accent-orange .elementor-icon-box-wrapper:hover .elementor-icon svg {
+  color: #ffffff !important; fill: #ffffff !important;
+}
+
+/* --------------------------------------------------------------------------
+   9. ACCORDION & TABS — FAQ style
+   -------------------------------------------------------------------------- */
+/* JKit Accordion */
+.elementor-widget-jkit_accordion .card-wrapper {
+  border: 1px solid var(--hh-slate-200) !important;
+  border-radius: 1rem !important;
+  margin-bottom: 0.75rem !important;
+  overflow: hidden;
+  transition: all var(--hh-transition) !important;
+}
+
+.elementor-widget-jkit_accordion .card-wrapper:hover {
+  border-color: var(--hh-primary-100) !important;
+  box-shadow: var(--hh-shadow-md) !important;
+}
+
+.elementor-widget-jkit_accordion .card-header {
+  background: #ffffff !important;
+  padding: 1.25rem 1.5rem !important;
+}
+
+.elementor-widget-jkit_accordion .card-header .card-header-button {
+  font-weight: 700 !important;
+  color: var(--hh-slate-900) !important;
+  font-size: 1.0625rem !important;
+}
+
+.elementor-widget-jkit_accordion .card-body {
+  padding: 0 1.5rem 1.25rem !important;
+  color: var(--hh-slate-500) !important;
+  line-height: 1.75 !important;
+}
+
+/* Elementor Toggle */
+.elementor-widget-toggle .elementor-toggle-item {
+  border: 1px solid var(--hh-slate-200) !important;
+  border-radius: 1rem !important;
+  margin-bottom: 0.75rem !important;
+  overflow: hidden;
+}
+
+.elementor-widget-toggle .elementor-tab-title {
+  font-weight: 700 !important;
+  color: var(--hh-slate-900) !important;
+  padding: 1.25rem 1.5rem !important;
+}
+
+.elementor-widget-toggle .elementor-tab-content {
+  padding: 0 1.5rem 1.25rem !important;
+  color: var(--hh-slate-500) !important;
+  line-height: 1.75 !important;
+}
+
+/* Nested Tabs */
+.elementor-widget-nested-tabs .e-n-tabs-heading {
+  gap: 0.5rem !important;
+}
+
+.elementor-widget-nested-tabs .e-n-tab-title {
+  background: var(--hh-slate-50) !important;
+  border: 1px solid var(--hh-slate-200) !important;
+  border-radius: 0.75rem !important;
+  padding: 0.875rem 1.5rem !important;
+  font-weight: 600 !important;
+  color: var(--hh-slate-500) !important;
+  transition: all var(--hh-transition) !important;
+}
+
+.elementor-widget-nested-tabs .e-n-tab-title:hover {
+  background: var(--hh-primary-50) !important;
+  color: var(--hh-primary) !important;
+  border-color: var(--hh-primary-100) !important;
+}
+
+.elementor-widget-nested-tabs .e-n-tab-title[aria-selected="true"] {
+  background: var(--hh-primary) !important;
+  color: #ffffff !important;
+  border-color: var(--hh-primary) !important;
+}
+
+/* --------------------------------------------------------------------------
+   10. VIDEO WIDGET
+   -------------------------------------------------------------------------- */
+.elementor-widget-video .elementor-wrapper {
+  border-radius: 1.5rem !important;
+  overflow: hidden !important;
+  box-shadow: var(--hh-shadow-xl) !important;
+}
+
+/* --------------------------------------------------------------------------
+   11. IMAGES — Rounded
+   -------------------------------------------------------------------------- */
+.elementor-widget-image img {
+  border-radius: 1rem;
+}
+
+/* --------------------------------------------------------------------------
+   12. BLOCKQUOTES — Keep existing green style, modernize
+   -------------------------------------------------------------------------- */
+blockquote {
+  border-left: 4px solid var(--hh-emerald) !important;
+  background: var(--hh-slate-50) !important;
+  padding: 1.5rem 2rem !important;
+  margin: 2rem 0 !important;
+  border-radius: 0 1rem 1rem 0 !important;
+  font-style: italic;
+}
+
+blockquote::before {
+  content: "\201C";
+  font-size: 3rem;
+  color: var(--hh-emerald);
+  line-height: 1;
+}
+
+/* --------------------------------------------------------------------------
+   13. BLOG — Single post styling (template 3848)
+   -------------------------------------------------------------------------- */
+body.single-post .elementor-widget-theme-post-content {
+  max-width: 48rem !important;
+  margin: 0 auto !important;
+}
+
+body.single-post .elementor-widget-theme-post-content .elementor-widget-container {
+  font-family: 'Inter', sans-serif !important;
+  color: var(--hh-slate-700);
+  font-size: 1.0625rem;
+  line-height: 1.8;
+}
+
+body.single-post .elementor-widget-theme-post-content h2 {
+  font-weight: 900 !important;
+  font-size: 1.875rem !important;
+  color: var(--hh-slate-900) !important;
+  margin-top: 3rem !important;
+  margin-bottom: 1rem !important;
+}
+
+body.single-post .elementor-widget-theme-post-content h3 {
+  font-weight: 700 !important;
+  font-size: 1.375rem !important;
+  color: var(--hh-slate-900) !important;
+  margin-top: 2.5rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+/* Table of contents */
+.elementor-widget-table-of-contents .elementor-toc__header-title {
+  font-weight: 700 !important;
+  color: var(--hh-slate-900) !important;
+}
+
+.elementor-widget-table-of-contents .elementor-toc__body {
+  border: 1px solid var(--hh-slate-200) !important;
+  border-radius: 1rem !important;
+  padding: 1.5rem !important;
+  background: var(--hh-slate-50) !important;
+}
+
+.elementor-widget-table-of-contents .elementor-toc__list-item-text {
+  color: var(--hh-primary) !important;
+  font-weight: 500 !important;
+}
+
+/* Author box */
+.elementor-widget-author-box .elementor-author-box__avatar img {
+  border-radius: 50% !important;
+}
+
+.elementor-widget-author-box {
+  background: var(--hh-slate-50) !important;
+  border: 1px solid var(--hh-slate-200) !important;
+  border-radius: 1.5rem !important;
+  padding: 2rem !important;
+}
+
+/* --------------------------------------------------------------------------
+   14. ANIMATIONS — Smooth transitions everywhere
+   -------------------------------------------------------------------------- */
+/* Re-enable transitions (removes the old * { transition: none } override) */
+.elementor-element {
+  transition: transform var(--hh-transition), box-shadow var(--hh-transition), opacity var(--hh-transition) !important;
+}
+
+/* Fade in on scroll — add .hh-fade-in class in Elementor */
+.hh-fade-in {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: opacity 0.6s ease, transform 0.6s ease !important;
+}
+
+.hh-fade-in.elementor-element {
+  opacity: 0;
+  transform: translateY(2rem);
+}
+
+/* JavaScript will add this class when element is in viewport */
+.hh-fade-in.hh-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* --------------------------------------------------------------------------
+   15. RESPONSIVE — Mobile refinements
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+  h1.elementor-heading-title,
+  .elementor-widget-heading h1.elementor-heading-title {
+    font-size: 2rem !important;
+  }
+
+  h2.elementor-heading-title,
+  .elementor-widget-heading h2.elementor-heading-title {
+    font-size: 1.625rem !important;
+  }
+
+  .elementor-top-section,
+  .e-con.e-parent {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  .elementor-widget-icon-box .elementor-icon-box-wrapper,
+  .elementor-widget-image-box .elementor-image-box-wrapper {
+    border-radius: 1rem !important;
+    padding: 1.5rem !important;
+  }
+
+  .elementor-widget-button .elementor-button,
+  .elementor-widget-jkit_button .jkit-button-wrapper a {
+    padding: 0.875rem 1.5rem !important;
+    font-size: 0.9375rem !important;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  h1.elementor-heading-title,
+  .elementor-widget-heading h1.elementor-heading-title {
+    font-size: 2.5rem !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   16. UTILITY CLASSES — À appliquer via CSS Classes dans Elementor
+   -------------------------------------------------------------------------- */
+.hh-text-center { text-align: center !important; }
+.hh-text-white { color: #ffffff !important; }
+.hh-text-primary { color: var(--hh-primary) !important; }
+.hh-rounded-2xl { border-radius: 1.5rem !important; }
+.hh-rounded-xl { border-radius: 1rem !important; }
+.hh-shadow-lg { box-shadow: var(--hh-shadow-lg) !important; }
+.hh-no-border { border: none !important; }
+.hh-overflow-hidden { overflow: hidden !important; }
+.hh-mx-auto { margin-left: auto !important; margin-right: auto !important; }
+.hh-max-w-3xl { max-width: 48rem !important; }
+.hh-max-w-4xl { max-width: 56rem !important; }
+.hh-py-0 { padding-top: 0 !important; padding-bottom: 0 !important; }
