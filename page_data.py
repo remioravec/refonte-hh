@@ -565,6 +565,216 @@ P_PLATS = {
     }
 }
 
+# ── MEDICAL (parent page) ──
+P_MEDICAL = {
+    "id": 6022, "slug": "medical", "name": "ERP Médical",
+    "hero": {
+        "badge": "ERP Médical",
+        "title_w": "Simplifiez votre gestion,",
+        "title_a": "soignez votre logistique",
+        "desc": "Harel Medical est l'ERP conçu exclusivement pour les grossistes, distributeurs et importateurs du secteur médical. Centralisez vos stocks, assurez la traçabilité, optimisez vos ventes B2B.",
+        "bg": "https://www.helloharel.com/prometheus/wp-content/uploads/2023/08/bg-line-v7.png"
+    },
+    "bento": {
+        "overline": "Modules ERP Médical",
+        "heading": "Toutes les fonctionnalités pour le médical",
+        "sub": "Un ERP complet qui couvre l'intégralité de votre chaîne de valeur médicale",
+        "cards": [
+            {"icon": "search", "color": "blue", "bg_icon": "shield", "title": "Gestion des stocks & Traçabilité", "desc": "Le cœur de votre métier. Suivez chaque produit du fournisseur au patient. Numéros de série, gestion des lots, conformité FIFO/FEFO.", "checks": ["Numéros de série et lots", "Blocage auto des lots périmés", "Historique complet pour rappels produit"], "link": "/prometheus/medical/dispositifs-medicaux/", "link_text": "Découvrir la traçabilité"},
+            {"icon": "truck", "color": "emerald", "title": "Logistique & Supply Chain", "desc": "Optimisez vos expéditions multi-entrepôts, gérez les envois prioritaires et la chaîne du froid pour les produits sensibles.", "link": "/prometheus/medical/dispositifs-medicaux/"},
+            {"icon": "cart", "color": "amber", "title": "Achats & Approvisionnement", "desc": "Automatisez vos commandes fournisseurs, suivez les certificats CE et les validations réglementaires à l'import.", "link": "/prometheus/medical/dispositifs-medicaux/"},
+            {"icon": "clipboard", "color": "indigo", "title": "Inventaire en temps réel", "desc": "Inventaire permanent ou tournant via PDA et scan mobile. Lecture code-barres, QR codes et Datamatrix UDI.", "link": "/prometheus/medical/dispositifs-medicaux/"},
+            {"icon": "dollar", "color": "red", "title": "Gestion Tarifaire B2B complexe", "desc": "Gérez les grilles tarifaires spécifiques aux marchés publics, remises hospitalières, contrats-cadre et tarifs LPP/LPPR."}
+        ]
+    },
+    "faq": {
+        "overline": "FAQ Médical",
+        "heading": "Questions sur l'ERP médical",
+        "sub": "Conformité, traçabilité et distribution médicale.",
+        "items": [
+            {"icon": "shield", "q": "L'ERP est-il conforme aux exigences de l'ANSM ?", "meta": "Réglementation, audits, traçabilité", "html": "<h3>Conformité ANSM intégrée</h3><p>Oui. L'ERP intègre nativement les exigences de l'ANSM en matière de <strong>traçabilité des dispositifs médicaux</strong>. Chaque lot, chaque numéro de série est tracé du fournisseur au client final. Les registres sont exportables pour les audits ISO 13485.</p>"},
+            {"icon": "search", "q": "Comment fonctionne la traçabilité UDI ?", "meta": "Codes UDI, Datamatrix, EUDAMED", "html": "<h3>Traçabilité UDI native</h3><p>L'ERP lit et enregistre les <strong>codes UDI (Unique Device Identification)</strong> via scan Datamatrix. Chaque produit est lié à son UDI-DI et UDI-PI, conformément au règlement MDR 2017/745. Les données sont prêtes pour déclaration EUDAMED.</p>"},
+            {"icon": "clock", "q": "Quel est le délai de déploiement ?", "meta": "Migration, formation, go-live", "html": "<h3>Déploiement en 2 à 4 semaines</h3><p>Notre process éprouvé permet un déploiement rapide :</p><ul><li><strong>Semaine 1</strong> — Audit et cadrage de vos besoins</li><li><strong>Semaine 2</strong> — Migration des données et paramétrage</li><li><strong>Semaine 3</strong> — Formation des équipes</li><li><strong>Semaine 4</strong> — Go-live avec support dédié</li></ul>"},
+            {"icon": "database", "q": "Les données sont-elles hébergées en HDS ?", "meta": "Hébergement, sécurité, RGPD", "html": "<h3>Hébergement HDS certifié</h3><p>Oui. Toutes vos données sont hébergées sur des serveurs <strong>certifiés HDS (Hébergeur de Données de Santé)</strong> en France. Conformité totale au RGPD. Sauvegardes quotidiennes, chiffrement AES-256, et PRA garantissant une disponibilité de 99,9%.</p>"}
+        ]
+    }
+}
+
+# ── DISPOSITIFS MÉDICAUX ──
+P_DISPOSITIFS = {
+    "id": 6023, "slug": "dispositifs-medicaux", "name": "ERP Dispositifs Médicaux",
+    "hero": {
+        "badge": "ERP Dispositifs Médicaux",
+        "title_w": "DMI, codes UDI et",
+        "title_a": "conformité MDR",
+        "desc": "Grossistes et importateurs de dispositifs médicaux : gérez vos stocks par numéro de série, assurez la traçabilité UDI et restez conformes au règlement MDR 2017/745 sans effort.",
+        "bg": "https://www.helloharel.com/prometheus/wp-content/uploads/2023/08/bg-line-v7.png"
+    },
+    "bento": {
+        "overline": "ERP Dispositifs Médicaux",
+        "heading": "L'ERP conçu pour les dispositifs médicaux",
+        "sub": "UDI, MDR, ANSM, numéros de série, rappels produit",
+        "cards": [
+            {"icon": "search", "color": "blue", "bg_icon": "shield", "title": "Traçabilité UDI complète", "desc": "Chaque dispositif tracé par son UDI-DI et UDI-PI. Scan Datamatrix natif, conformité EUDAMED et historique complet pour les rappels.", "checks": ["Scan UDI Datamatrix natif", "Traçabilité du fournisseur au patient", "Rappel ciblé par numéro de série"], "link": "/prometheus/medical/dispositifs-medicaux/", "link_text": "Découvrir l'ERP DMI"},
+            {"icon": "shield", "color": "emerald", "title": "Conformité MDR & ANSM", "desc": "Registres réglementaires pré-formatés, suivi des certificats CE, alertes d'expiration. Documentation prête pour les audits ISO 13485.", "link": "/prometheus/medical/dispositifs-medicaux/"},
+            {"icon": "box", "color": "amber", "title": "Gestion par numéro de série", "desc": "Chaque DMI est identifié individuellement. Suivi du cycle de vie complet : réception, stockage, expédition, implantation, retour.", "link": "/prometheus/medical/dispositifs-medicaux/"},
+            {"icon": "truck", "color": "indigo", "title": "Logistique prioritaire", "desc": "Gestion des expéditions urgentes pour les blocs opératoires. Suivi temps réel, conditions de transport et preuve de livraison.", "link": "/prometheus/medical/dispositifs-medicaux/"},
+            {"icon": "bell", "color": "red", "title": "Alertes et rappels produit", "desc": "En cas de rappel, identifiez en secondes tous les clients ayant reçu le lot ou le numéro de série concerné. Notifications automatiques."}
+        ]
+    },
+    "faq": {
+        "overline": "FAQ Dispositifs Médicaux",
+        "heading": "Questions sur l'ERP dispositifs médicaux",
+        "sub": "UDI, traçabilité, conformité réglementaire.",
+        "items": [
+            {"icon": "shield", "q": "L'ERP gère-t-il la conformité MDR 2017/745 ?", "meta": "Règlement européen, UDI, EUDAMED", "html": "<h3>Conformité MDR native</h3><p>Oui. L'ERP intègre les exigences du <strong>règlement MDR 2017/745</strong> : enregistrement UDI obligatoire, traçabilité post-market, documentation technique et vigilance. Les données sont formatées pour déclaration EUDAMED.</p>"},
+            {"icon": "search", "q": "Comment fonctionne le scan UDI Datamatrix ?", "meta": "PDA, scan mobile, identification", "html": "<h3>Scan UDI en un geste</h3><p>L'ERP lit les <strong>codes Datamatrix GS1</strong> via PDA ou smartphone. Le scan décode automatiquement : référence produit (UDI-DI), numéro de série/lot (UDI-PI), date de péremption et date de fabrication. Zéro saisie manuelle.</p>"},
+            {"icon": "bell", "q": "Comment gérer un rappel de dispositif médical ?", "meta": "Traçabilité, lots, notifications", "html": "<h3>Rappel ciblé instantané</h3><p>En cas d'alerte ANSM, l'ERP identifie en quelques secondes <strong>tous les clients ayant reçu le produit concerné</strong> (par lot ou par numéro de série). Les notifications de rappel sont générées automatiquement avec les instructions de retour.</p>"},
+            {"icon": "doc", "q": "L'ERP génère-t-il les documents pour les audits ISO 13485 ?", "meta": "Registres, certificats, documentation", "html": "<h3>Documentation audit-ready</h3><p>L'ERP génère et archive tous les documents requis : <strong>registres de traçabilité</strong>, <strong>certificats CE fournisseurs</strong>, <strong>fiches de données de sécurité</strong>, <strong>rapports de vigilance</strong>. Export PDF et CSV pour les auditeurs.</p>"}
+        ]
+    }
+}
+
+# ── LABORATOIRES ──
+P_LABORATOIRES = {
+    "id": 6024, "slug": "laboratoires", "name": "ERP Laboratoires",
+    "hero": {
+        "badge": "ERP Laboratoires",
+        "title_w": "Réactifs, chaîne du froid",
+        "title_a": "et diagnostic in vitro",
+        "desc": "Distributeurs de réactifs et consommables de laboratoire : maîtrisez la chaîne du froid, gérez les DLC courtes et assurez la traçabilité lot par lot de vos produits DIV.",
+        "bg": "https://www.helloharel.com/prometheus/wp-content/uploads/2023/08/bg-line-v7.png"
+    },
+    "bento": {
+        "overline": "ERP Laboratoires",
+        "heading": "L'ERP conçu pour les laboratoires",
+        "sub": "Réactifs, chaîne du froid, DIV, traçabilité",
+        "cards": [
+            {"icon": "thermo", "color": "blue", "bg_icon": "shield", "title": "Chaîne du froid maîtrisée", "desc": "Suivi des températures de stockage et transport. Alertes automatiques en cas de rupture. Historique complet pour les audits qualité.", "checks": ["Monitoring température en continu", "Alertes rupture chaîne du froid", "Historique pour audits qualité"], "link": "/prometheus/medical/laboratoires/", "link_text": "Découvrir l'ERP labo"},
+            {"icon": "clock", "color": "amber", "title": "Gestion des DLC/DLUO", "desc": "FIFO/FEFO automatique pour les réactifs à durée de vie courte. Blocage des lots périmés et alertes de péremption configurables.", "link": "/prometheus/medical/laboratoires/"},
+            {"icon": "search", "color": "emerald", "title": "Traçabilité lot par lot", "desc": "Chaque réactif tracé du fournisseur au laboratoire client. Numéro de lot, date de fabrication, conditions de conservation.", "link": "/prometheus/medical/laboratoires/"},
+            {"icon": "doc", "color": "indigo", "title": "Fiches de données de sécurité", "desc": "Gestion centralisée des FDS, fiches techniques et certificats d'analyse. Accès instantané pour vos clients et les autorités.", "link": "/prometheus/medical/laboratoires/"},
+            {"icon": "shield", "color": "red", "title": "Conformité DIV & IVDR", "desc": "Documentation conforme au règlement IVDR 2017/746 pour les dispositifs de diagnostic in vitro. Registres pré-formatés pour l'ANSM."}
+        ]
+    },
+    "faq": {
+        "overline": "FAQ Laboratoires",
+        "heading": "Questions sur l'ERP laboratoires",
+        "sub": "Réactifs, chaîne du froid, conformité DIV.",
+        "items": [
+            {"icon": "thermo", "q": "L'ERP gère-t-il la chaîne du froid des réactifs ?", "meta": "Température, monitoring, alertes", "html": "<h3>Chaîne du froid intégrée</h3><p>Oui. L'ERP enregistre les <strong>conditions de température</strong> à chaque étape : réception, stockage, préparation, expédition. Les capteurs IoT compatibles permettent un monitoring en temps réel avec alertes SMS/email en cas d'écart.</p>"},
+            {"icon": "clock", "q": "Comment gérer les réactifs à DLC courte ?", "meta": "FEFO, péremption, rotation", "html": "<h3>Rotation FEFO automatique</h3><p>L'ERP applique automatiquement la règle <strong>FEFO (First Expired, First Out)</strong>. Les réactifs proches de leur date de péremption sont proposés en priorité. Les lots périmés sont bloqués automatiquement et ne peuvent pas être expédiés.</p>"},
+            {"icon": "shield", "q": "L'ERP est-il conforme au règlement IVDR ?", "meta": "DIV, IVDR 2017/746, ANSM", "html": "<h3>Conformité IVDR native</h3><p>L'ERP intègre les exigences du <strong>règlement IVDR 2017/746</strong> pour les dispositifs de diagnostic in vitro : classification des produits, traçabilité renforcée, documentation technique et déclaration de conformité.</p>"},
+            {"icon": "database", "q": "Peut-on gérer les certificats d'analyse par lot ?", "meta": "Certificats, FDS, documentation", "html": "<h3>Gestion documentaire par lot</h3><p>Chaque lot peut être associé à ses <strong>certificats d'analyse</strong>, <strong>fiches de données de sécurité</strong> et <strong>fiches techniques</strong>. Les documents sont accessibles en un clic et transmissibles automatiquement aux clients avec les bons de livraison.</p>"}
+        ]
+    }
+}
+
+# ── MATÉRIEL DENTAIRE ──
+P_DENTAIRE = {
+    "id": 6025, "slug": "materiel-dentaire", "name": "ERP Matériel Dentaire",
+    "hero": {
+        "badge": "ERP Matériel Dentaire",
+        "title_w": "Consommables, catalogues XXL",
+        "title_a": "et tarifs cabinet",
+        "desc": "Distributeurs de matériel et consommables dentaires : gérez des catalogues de milliers de références, des tarifs spécifiques par cabinet et une logistique de livraison quotidienne.",
+        "bg": "https://www.helloharel.com/prometheus/wp-content/uploads/2023/08/bg-line-v7.png"
+    },
+    "bento": {
+        "overline": "ERP Matériel Dentaire",
+        "heading": "L'ERP conçu pour le matériel dentaire",
+        "sub": "Catalogues XXL, tarifs cabinet, livraison quotidienne",
+        "cards": [
+            {"icon": "database", "color": "blue", "bg_icon": "shield", "title": "Catalogue de milliers de références", "desc": "Gérez des catalogues de 10 000 à 50 000 références avec recherche instantanée, photos, fiches techniques et codes fabricant.", "checks": ["Recherche multi-critères instantanée", "Photos et fiches techniques", "Import automatique catalogues fournisseurs"], "link": "/prometheus/medical/materiel-dentaire/", "link_text": "Découvrir l'ERP dentaire"},
+            {"icon": "tag", "color": "amber", "title": "Tarification par cabinet", "desc": "Grilles tarifaires personnalisées par cabinet dentaire, groupements d'achat et centrales. Remises en cascade et promotions automatiques.", "link": "/prometheus/medical/materiel-dentaire/"},
+            {"icon": "truck", "color": "emerald", "title": "Livraison quotidienne", "desc": "Tournées de livraison optimisées pour les cabinets dentaires. Préparation des commandes par tournée avec scan et validation.", "link": "/prometheus/medical/materiel-dentaire/"},
+            {"icon": "cart", "color": "indigo", "title": "Commande en ligne B2B", "desc": "Portail de commande en ligne pour vos cabinets clients. Historique, favoris, réassort automatique et suivi de livraison.", "link": "/prometheus/medical/materiel-dentaire/"},
+            {"icon": "chart", "color": "red", "title": "Statistiques commerciales", "desc": "Analyse des ventes par cabinet, par gamme de produit et par commercial. Identifiez les opportunités de cross-selling et upselling."}
+        ]
+    },
+    "faq": {
+        "overline": "FAQ Matériel Dentaire",
+        "heading": "Questions sur l'ERP matériel dentaire",
+        "sub": "Catalogues, tarifs et logistique dentaire.",
+        "items": [
+            {"icon": "database", "q": "L'ERP peut-il gérer un catalogue de 50 000 références ?", "meta": "Performance, recherche, import", "html": "<h3>Catalogues XXL sans ralentissement</h3><p>Oui. L'ERP est optimisé pour gérer des <strong>catalogues de plusieurs dizaines de milliers de références</strong>. La recherche est instantanée grâce à l'indexation multi-critères : désignation, code fabricant, code EAN, famille de produit.</p>"},
+            {"icon": "tag", "q": "Comment gérer les tarifs spécifiques par cabinet ?", "meta": "Remises, groupements, centrales", "html": "<h3>Tarification multi-niveaux</h3><p>L'ERP gère des <strong>grilles tarifaires illimitées</strong> : tarif par cabinet, par groupement d'achat, par centrale. Les remises peuvent être en cascade (remise + remise), par palier de quantité, ou par période promotionnelle.</p>"},
+            {"icon": "truck", "q": "Le module gère-t-il les tournées quotidiennes ?", "meta": "Tournées, préparation, livraison", "html": "<h3>Tournées optimisées</h3><p>Oui. Le module logistique planifie les tournées par zone géographique, prépare les commandes dans l'ordre de la tournée et génère les bons de livraison. Le livreur valide chaque livraison sur tablette avec signature client.</p>"},
+            {"icon": "cart", "q": "Les cabinets peuvent-ils commander en ligne ?", "meta": "Portail B2B, historique, favoris", "html": "<h3>Portail B2B intégré</h3><p>Le portail de commande en ligne permet à vos cabinets de <strong>passer commande 24h/24</strong>, consulter leur historique, créer des listes de favoris et suivre leurs livraisons. Les commandes sont intégrées automatiquement dans l'ERP.</p>"}
+        ]
+    }
+}
+
+# ── MAINTIEN À DOMICILE ──
+P_DOMICILE = {
+    "id": 6026, "slug": "maintien-a-domicile", "name": "ERP Maintien à Domicile",
+    "hero": {
+        "badge": "ERP Maintien à Domicile",
+        "title_w": "Location, LPPR",
+        "title_a": "et tournées patients",
+        "desc": "Prestataires de santé à domicile : gérez la location de matériel médical, les prescriptions LPPR, les tournées techniciens et le suivi patient en toute conformité.",
+        "bg": "https://www.helloharel.com/prometheus/wp-content/uploads/2023/08/bg-line-v7.png"
+    },
+    "bento": {
+        "overline": "ERP Maintien à Domicile",
+        "heading": "L'ERP conçu pour le maintien à domicile",
+        "sub": "Location, LPPR, tournées techniciens, suivi patient",
+        "cards": [
+            {"icon": "clipboard", "color": "blue", "bg_icon": "shield", "title": "Gestion de la location", "desc": "Parc de matériel en location : lits médicalisés, fauteuils, oxygénothérapie. Suivi des contrats, des renouvellements et de la facturation CPAM.", "checks": ["Suivi du parc matériel", "Contrats et renouvellements auto", "Facturation CPAM / mutuelle"], "link": "/prometheus/medical/maintien-a-domicile/", "link_text": "Découvrir l'ERP MAD"},
+            {"icon": "doc", "color": "amber", "title": "Prescriptions LPPR", "desc": "Gestion des prescriptions médicales, codes LPPR et télétransmission aux organismes payeurs. Conformité totale avec l'Assurance Maladie.", "link": "/prometheus/medical/maintien-a-domicile/"},
+            {"icon": "truck", "color": "emerald", "title": "Tournées techniciens", "desc": "Planification des installations, maintenances et récupérations chez les patients. Optimisation des itinéraires et suivi GPS.", "link": "/prometheus/medical/maintien-a-domicile/"},
+            {"icon": "users", "color": "indigo", "title": "Dossier patient", "desc": "Fiche patient complète : prescriptions, matériel installé, historique des interventions, coordonnées du médecin prescripteur.", "link": "/prometheus/medical/maintien-a-domicile/"},
+            {"icon": "gear", "color": "red", "title": "Maintenance préventive", "desc": "Calendrier de maintenance du matériel en location. Alertes automatiques pour les contrôles techniques obligatoires et les révisions."}
+        ]
+    },
+    "faq": {
+        "overline": "FAQ Maintien à Domicile",
+        "heading": "Questions sur l'ERP maintien à domicile",
+        "sub": "Location, LPPR, patients et tournées.",
+        "items": [
+            {"icon": "doc", "q": "L'ERP gère-t-il la facturation CPAM et mutuelles ?", "meta": "Télétransmission, LPPR, remboursement", "html": "<h3>Facturation tiers-payant intégrée</h3><p>Oui. L'ERP gère la <strong>facturation en tiers-payant</strong> : part CPAM et part mutuelle. Les flux de télétransmission sont conformes aux normes de l'Assurance Maladie. Le suivi des remboursements est automatisé.</p>"},
+            {"icon": "clipboard", "q": "Comment suivre le parc de matériel en location ?", "meta": "Contrats, inventaire, amortissement", "html": "<h3>Gestion de parc complète</h3><p>Chaque appareil est identifié par son <strong>numéro de série</strong> et suivi tout au long de son cycle de vie : achat, mise en location, maintenance, retour, reconditionnement ou mise au rebut. L'amortissement est calculé automatiquement.</p>"},
+            {"icon": "truck", "q": "Le module gère-t-il les tournées des techniciens ?", "meta": "Planification, GPS, interventions", "html": "<h3>Tournées optimisées</h3><p>Le module planifie les interventions (installation, maintenance, récupération) par zone géographique. Le technicien accède à sa tournée sur tablette avec <strong>itinéraire optimisé</strong>, fiche patient et historique du matériel. Le rapport d'intervention est signé sur place.</p>"},
+            {"icon": "users", "q": "Peut-on gérer le dossier patient dans l'ERP ?", "meta": "Prescriptions, historique, médecin", "html": "<h3>Dossier patient centralisé</h3><p>Chaque patient dispose d'une fiche complète : <strong>coordonnées</strong>, <strong>médecin prescripteur</strong>, <strong>prescriptions en cours</strong>, <strong>matériel installé</strong>, <strong>historique des interventions</strong>. Les données sont hébergées en HDS conformément à la réglementation.</p>"}
+        ]
+    }
+}
+
+# ── HYGIÈNE PROFESSIONNELLE ──
+P_HYGIENE = {
+    "id": 6027, "slug": "hygiene-professionnelle", "name": "ERP Hygiène Professionnelle",
+    "hero": {
+        "badge": "ERP Hygiène Professionnelle",
+        "title_w": "Gros volumes, biocides",
+        "title_a": "et cadenciers clients",
+        "desc": "Distributeurs de produits d'hygiène et de désinfection professionnelle : gérez les gros volumes, la réglementation biocide et les cadenciers de livraison automatique.",
+        "bg": "https://www.helloharel.com/prometheus/wp-content/uploads/2023/08/bg-line-v7.png"
+    },
+    "bento": {
+        "overline": "ERP Hygiène Professionnelle",
+        "heading": "L'ERP conçu pour l'hygiène professionnelle",
+        "sub": "Gros volumes, biocides, cadenciers, multi-conditionnement",
+        "cards": [
+            {"icon": "box", "color": "blue", "bg_icon": "shield", "title": "Gestion des gros volumes", "desc": "Palettes, rolls, conteneurs : gérez les unités logistiques adaptées aux gros volumes. Conversion automatique entre unités de vente et unités de stockage.", "checks": ["Multi-conditionnement natif", "Conversion UVC/colis/palette auto", "Seuils de réapprovisionnement intelligents"], "link": "/prometheus/medical/hygiene-professionnelle/", "link_text": "Découvrir l'ERP hygiène"},
+            {"icon": "shield", "color": "emerald", "title": "Réglementation biocide", "desc": "Suivi des autorisations de mise sur le marché (AMM), fiches de données de sécurité et étiquetage CLP pour les produits biocides.", "link": "/prometheus/medical/hygiene-professionnelle/"},
+            {"icon": "calendar", "color": "amber", "title": "Cadenciers de livraison", "desc": "Programmez les livraisons récurrentes pour vos clients (hôpitaux, EHPAD, cliniques). Fréquence, quantités et jours fixes configurables.", "link": "/prometheus/medical/hygiene-professionnelle/"},
+            {"icon": "warehouse", "color": "indigo", "title": "Multi-entrepôts", "desc": "Gérez plusieurs dépôts régionaux avec stocks consolidés. Transferts inter-sites optimisés et réapprovisionnement automatique.", "link": "/prometheus/medical/hygiene-professionnelle/"},
+            {"icon": "chart", "color": "red", "title": "Analyses de consommation", "desc": "Suivez les consommations de vos clients par famille de produit. Détectez les variations anormales et proposez des réassorts proactifs."}
+        ]
+    },
+    "faq": {
+        "overline": "FAQ Hygiène Professionnelle",
+        "heading": "Questions sur l'ERP hygiène professionnelle",
+        "sub": "Volumes, biocides, cadenciers et conformité.",
+        "items": [
+            {"icon": "shield", "q": "L'ERP gère-t-il la réglementation biocide ?", "meta": "AMM, FDS, CLP, étiquetage", "html": "<h3>Conformité biocide intégrée</h3><p>Oui. L'ERP associe à chaque produit biocide son <strong>numéro d'AMM</strong>, sa <strong>fiche de données de sécurité</strong> et ses <strong>pictogrammes CLP</strong>. Les documents réglementaires sont transmis automatiquement avec les bons de livraison.</p>"},
+            {"icon": "calendar", "q": "Comment fonctionnent les cadenciers automatiques ?", "meta": "Livraisons récurrentes, fréquence", "html": "<h3>Cadenciers configurables</h3><p>Pour chaque client, définissez un <strong>programme de livraison récurrent</strong> : produits, quantités, fréquence (hebdomadaire, bimensuelle, mensuelle) et jour de livraison. L'ERP génère automatiquement les commandes et les intègre au planning logistique.</p>"},
+            {"icon": "box", "q": "L'ERP gère-t-il le multi-conditionnement ?", "meta": "UVC, colis, palette, conversion", "html": "<h3>Multi-conditionnement natif</h3><p>Un même produit peut être vendu à <strong>l'unité, au colis, à la palette</strong>. Les conversions sont automatiques : si un client commande 500 unités et qu'un colis en contient 24, l'ERP calcule 20 colis + 20 unités. Les stocks sont mis à jour en conséquence.</p>"},
+            {"icon": "warehouse", "q": "Peut-on gérer plusieurs dépôts régionaux ?", "meta": "Multi-sites, transferts, consolidation", "html": "<h3>Multi-entrepôts centralisé</h3><p>L'ERP gère un nombre illimité de dépôts avec <strong>vision consolidée des stocks</strong>. Les transferts inter-sites sont tracés lot par lot. Le réapprovisionnement des dépôts régionaux depuis le dépôt central est automatisé selon les seuils configurés.</p>"}
+        ]
+    }
+}
+
 # ── ALL PAGES LIST ──
 PAGES = [
     P_FONCTIONNALITES,
@@ -583,4 +793,13 @@ PAGES = [
     P_CHARCUTIER,
     P_LAITIER,
     P_PLATS,
+]
+
+PAGES_MEDICAL = [
+    P_MEDICAL,
+    P_DISPOSITIFS,
+    P_LABORATOIRES,
+    P_DENTAIRE,
+    P_DOMICILE,
+    P_HYGIENE,
 ]
