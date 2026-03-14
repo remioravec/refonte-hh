@@ -55,21 +55,21 @@ I = {
 HEADER = '''<!-- HEADER -->
 <header class="site-header">
     <div class="container header-inner">
-        <a href="/" class="logo"><img loading="eager" src="https://www.helloharel.com/wp-content/uploads/2019/05/hello-harel-logo-white.svg" alt="Hello Harel - ERP Agroalimentaire"></a>
+        <a href="/prometheus/" class="logo"><img loading="eager" src="https://www.helloharel.com/wp-content/uploads/2019/05/hello-harel-logo-white.svg" alt="Hello Harel - ERP Agroalimentaire"></a>
         <nav class="desktop-nav">
-            <a href="/">Accueil</a>
+            <a href="/prometheus/">Accueil</a>
             <div class="nav-dropdown">
                 <button class="nav-dropdown-trigger">Fonctionnalités <svg class="chevron-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
                 <div class="dropdown-panel" style="width:380px;max-width:95vw">
                     <div class="dropdown-card">
-                        <a href="/fonctionnalites/crm/" class="dropdown-link"><div class="dropdown-link-icon blue">''' + I["users"] + '''</div><span class="dropdown-link-text">Gestion de la relation client</span></a>
-                        <a href="/fonctionnalites/facturation/" class="dropdown-link"><div class="dropdown-link-icon indigo">''' + I["doc"] + '''</div><span class="dropdown-link-text">Gestion de la facturation</span></a>
-                        <a href="/fonctionnalites/vente/" class="dropdown-link"><div class="dropdown-link-icon emerald">''' + I["dollar"] + '''</div><span class="dropdown-link-text">Gestion commerciale</span></a>
-                        <a href="/fonctionnalites/gestion-de-stock/" class="dropdown-link"><div class="dropdown-link-icon amber">''' + I["box"] + '''</div><span class="dropdown-link-text">Gestion des stocks</span></a>
-                        <a href="/fonctionnalites/fabrication/" class="dropdown-link"><div class="dropdown-link-icon red">''' + I["gear"] + '''</div><span class="dropdown-link-text">Gestion de la fabrication</span></a>
-                        <a href="/fonctionnalites/achat/" class="dropdown-link"><div class="dropdown-link-icon teal">''' + I["cart"] + '''</div><span class="dropdown-link-text">Gestion des achats</span></a>
-                        <a href="/fonctionnalites/logistique/" class="dropdown-link"><div class="dropdown-link-icon cyan">''' + I["arrows"] + '''</div><span class="dropdown-link-text">Gestion de la logistique</span></a>
-                        <a href="/fonctionnalites/import-export/" class="dropdown-link"><div class="dropdown-link-icon orange">''' + I["globe"] + '''</div><span class="dropdown-link-text">Gestion des imports exports</span></a>
+                        <a href="/prometheus/fonctionnalites/crm/" class="dropdown-link"><div class="dropdown-link-icon blue">''' + I["users"] + '''</div><span class="dropdown-link-text">Gestion de la relation client</span></a>
+                        <a href="/prometheus/fonctionnalites/facturation/" class="dropdown-link"><div class="dropdown-link-icon indigo">''' + I["doc"] + '''</div><span class="dropdown-link-text">Gestion de la facturation</span></a>
+                        <a href="/prometheus/fonctionnalites/vente/" class="dropdown-link"><div class="dropdown-link-icon emerald">''' + I["dollar"] + '''</div><span class="dropdown-link-text">Gestion commerciale</span></a>
+                        <a href="/prometheus/fonctionnalites/gestion-de-stock/" class="dropdown-link"><div class="dropdown-link-icon amber">''' + I["box"] + '''</div><span class="dropdown-link-text">Gestion des stocks</span></a>
+                        <a href="/prometheus/fonctionnalites/fabrication/" class="dropdown-link"><div class="dropdown-link-icon red">''' + I["gear"] + '''</div><span class="dropdown-link-text">Gestion de la fabrication</span></a>
+                        <a href="/prometheus/fonctionnalites/achat/" class="dropdown-link"><div class="dropdown-link-icon teal">''' + I["cart"] + '''</div><span class="dropdown-link-text">Gestion des achats</span></a>
+                        <a href="/prometheus/fonctionnalites/logistique/" class="dropdown-link"><div class="dropdown-link-icon cyan">''' + I["arrows"] + '''</div><span class="dropdown-link-text">Gestion de la logistique</span></a>
+                        <a href="/prometheus/fonctionnalites/import-export/" class="dropdown-link"><div class="dropdown-link-icon orange">''' + I["globe"] + '''</div><span class="dropdown-link-text">Gestion des imports exports</span></a>
                     </div>
                 </div>
             </div>
@@ -79,34 +79,34 @@ HEADER = '''<!-- HEADER -->
                     <div class="dropdown-card" style="padding:0;overflow:hidden">
                         <div class="mega-industries-inner">
                             <h5>''' + I["scale"] + ''' Agroalimentaire</h5>
-                            <a href="/agroalimentaire/" class="industry-link"><div class="industry-link-icon">''' + I["shield"] + '''</div><span>ERP Agroalimentaire</span></a>
-                            <a href="/agroalimentaire/traiteur/" class="industry-link"><div class="industry-link-icon">''' + I["fire"] + '''</div><span>ERP Traiteur</span></a>
-                            <a href="/agroalimentaire/maraicher/" class="industry-link"><div class="industry-link-icon">''' + I["leaf"] + '''</div><span>ERP Fruits et légumes</span></a>
-                            <a href="/agroalimentaire/boulanger/" class="industry-link"><div class="industry-link-icon">''' + I["bread"] + '''</div><span>ERP Boulangerie Pâtisserie</span></a>
-                            <a href="/agroalimentaire/charcutier/" class="industry-link"><div class="industry-link-icon">''' + I["knife"] + '''</div><span>ERP Charcutier</span></a>
-                            <a href="/agroalimentaire/industrie-laitiere/" class="industry-link"><div class="industry-link-icon">''' + I["bottle"] + '''</div><span>ERP Laitier</span></a>
-                            <a href="/agroalimentaire/plats-cuisines-industriels/" class="industry-link"><div class="industry-link-icon">''' + I["plate"] + '''</div><span>ERP Plats cuisinés</span></a>
+                            <a href="/prometheus/agroalimentaire/" class="industry-link"><div class="industry-link-icon">''' + I["shield"] + '''</div><span>ERP Agroalimentaire</span></a>
+                            <a href="/prometheus/agroalimentaire/traiteur/" class="industry-link"><div class="industry-link-icon">''' + I["fire"] + '''</div><span>ERP Traiteur</span></a>
+                            <a href="/prometheus/agroalimentaire/maraicher/" class="industry-link"><div class="industry-link-icon">''' + I["leaf"] + '''</div><span>ERP Fruits et légumes</span></a>
+                            <a href="/prometheus/agroalimentaire/boulanger/" class="industry-link"><div class="industry-link-icon">''' + I["bread"] + '''</div><span>ERP Boulangerie Pâtisserie</span></a>
+                            <a href="/prometheus/agroalimentaire/charcutier/" class="industry-link"><div class="industry-link-icon">''' + I["knife"] + '''</div><span>ERP Charcutier</span></a>
+                            <a href="/prometheus/agroalimentaire/industrie-laitiere/" class="industry-link"><div class="industry-link-icon">''' + I["bottle"] + '''</div><span>ERP Laitier</span></a>
+                            <a href="/prometheus/agroalimentaire/plats-cuisines-industriels/" class="industry-link"><div class="industry-link-icon">''' + I["plate"] + '''</div><span>ERP Plats cuisinés</span></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <a href="/tarifs/">Tarifs</a>
-            <a href="/ecosysteme/">Écosystème</a>
+            <a href="/prometheus/tarifs/">Tarifs</a>
+            <a href="/prometheus/ecosysteme/">Écosystème</a>
         </nav>
         <div class="header-actions">
-            <a href="/contact/" class="btn-contact-header">Contactez-nous</a>
-            <a href="/contact/" class="btn-demo-header">Demandez une démo</a>
+            <a href="/prometheus/contact/" class="btn-contact-header">Contactez-nous</a>
+            <a href="/prometheus/contact/" class="btn-demo-header">Demandez une démo</a>
         </div>
         <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu"><svg id="iconMenu" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg><svg id="iconClose" style="display:none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
     </div>
     <div class="mobile-menu" id="mobileMenu">
         <div class="mobile-menu-inner">
-            <a href="/">Accueil</a>
-            <div><button class="mobile-accordion-btn" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">Fonctionnalités <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div class="mobile-submenu"><a href="/fonctionnalites/crm/">Gestion relation client</a><a href="/fonctionnalites/facturation/">Gestion facturation</a><a href="/fonctionnalites/vente/">Gestion commerciale</a><a href="/fonctionnalites/gestion-de-stock/">Gestion des stocks</a><a href="/fonctionnalites/fabrication/">Gestion fabrication</a><a href="/fonctionnalites/achat/">Gestion des achats</a><a href="/fonctionnalites/logistique/">Gestion logistique</a><a href="/fonctionnalites/import-export/">Gestion imports exports</a></div></div>
-            <div><button class="mobile-accordion-btn" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">Industries <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div class="mobile-submenu"><a href="/agroalimentaire/">ERP Agroalimentaire</a><a href="/agroalimentaire/traiteur/">ERP Traiteur</a><a href="/agroalimentaire/maraicher/">ERP Fruits et légumes</a><a href="/agroalimentaire/boulanger/">ERP Boulangerie</a><a href="/agroalimentaire/charcutier/">ERP Charcutier</a></div></div>
-            <a href="/tarifs/">Tarifs</a>
-            <a href="/ecosysteme/">Écosystème</a>
-            <div class="mobile-ctas"><a href="/contact/" class="mobile-cta-primary">Demandez une démo</a><a href="/contact/" class="mobile-cta-secondary">Contactez-nous</a></div>
+            <a href="/prometheus/">Accueil</a>
+            <div><button class="mobile-accordion-btn" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">Fonctionnalités <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div class="mobile-submenu"><a href="/prometheus/fonctionnalites/crm/">Gestion relation client</a><a href="/prometheus/fonctionnalites/facturation/">Gestion facturation</a><a href="/prometheus/fonctionnalites/vente/">Gestion commerciale</a><a href="/prometheus/fonctionnalites/gestion-de-stock/">Gestion des stocks</a><a href="/prometheus/fonctionnalites/fabrication/">Gestion fabrication</a><a href="/prometheus/fonctionnalites/achat/">Gestion des achats</a><a href="/prometheus/fonctionnalites/logistique/">Gestion logistique</a><a href="/prometheus/fonctionnalites/import-export/">Gestion imports exports</a></div></div>
+            <div><button class="mobile-accordion-btn" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">Industries <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div class="mobile-submenu"><a href="/prometheus/agroalimentaire/">ERP Agroalimentaire</a><a href="/prometheus/agroalimentaire/traiteur/">ERP Traiteur</a><a href="/prometheus/agroalimentaire/maraicher/">ERP Fruits et légumes</a><a href="/prometheus/agroalimentaire/boulanger/">ERP Boulangerie</a><a href="/prometheus/agroalimentaire/charcutier/">ERP Charcutier</a></div></div>
+            <a href="/prometheus/tarifs/">Tarifs</a>
+            <a href="/prometheus/ecosysteme/">Écosystème</a>
+            <div class="mobile-ctas"><a href="/prometheus/contact/" class="mobile-cta-primary">Demandez une démo</a><a href="/prometheus/contact/" class="mobile-cta-secondary">Contactez-nous</a></div>
         </div>
     </div>
 </header>'''
@@ -170,7 +170,7 @@ ABOUT_VIDEO = '''<!-- A PROPOS + VIDEO -->
                 <p>Depuis plus de 15 ans, Hello Harel accompagne les professionnels de l\'agroalimentaire dans la gestion intégrale de leur activité. Notre mission : offrir un <strong>ERP SaaS complet</strong>, conçu spécifiquement pour répondre aux contraintes de traçabilité, de gestion des DLC/DDM, de calcul des marges et de logistique propre au secteur alimentaire.</p>
                 <p>Que vous soyez grossiste, traiteur, boulanger industriel ou maraîcher, notre solution s\'adapte à votre réalité terrain. Plus de 500 entreprises nous font confiance pour piloter leurs achats, leurs ventes, leur production et leur logistique au quotidien.</p>
                 <p>Basée en France, notre équipe combine expertise métier et innovation technologique pour vous offrir un outil performant, évolutif et simple à prendre en main — sans intégrateur, déployé en quelques jours.</p>
-                <a href="/qui-sommes-nous/" class="discover-link">En savoir plus <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
+                <a href="/prometheus/qui-sommes-nous/" class="discover-link">En savoir plus <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
             </div>
             <div class="about-video">
                 <div class="video-wrapper">
@@ -200,14 +200,14 @@ INDUSTRIES = '''<!-- INDUSTRIES -->
 <section class="industries-section">
     <div class="bg-grid"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><defs><pattern id="gp" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M0 40V0h40" fill="none" stroke="currentColor" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(#gp)"/></svg></div>
     <div class="container">
-        <div class="section-header"><p class="overline">Solutions par métier</p><h2><a href="/agroalimentaire/" style="color:inherit">Les métiers de notre ERP agroalimentaire</a></h2><p>Chaque niche agroalimentaire a ses propres contraintes. Harel s\'adapte à votre réalité terrain.</p></div>
+        <div class="section-header"><p class="overline">Solutions par métier</p><h2><a href="/prometheus/agroalimentaire/" style="color:inherit">Les métiers de notre ERP agroalimentaire</a></h2><p>Chaque niche agroalimentaire a ses propres contraintes. Harel s\'adapte à votre réalité terrain.</p></div>
         <div class="industries-grid">
-            <a href="/agroalimentaire/traiteur/" class="industry-card"><div class="card-icon"><svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2C8 2 4 4 4 8c0 2.5 2 4 4 5v1h8v-1c2-1 4-2.5 4-5 0-4-4-6-8-6zM8 16h8m-6 3h4m-2 3v-3"/></svg></div><h3>Traiteur</h3><p>Création de fiches techniques, devis complexes et logistique pour les réceptions.</p></a>
-            <a href="/agroalimentaire/charcutier/" class="industry-card"><div class="card-icon"><svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 3l-1.5 1.5M9 9l-6 6c-1 1-1 2.5 0 3.5l2 2c1 1 2.5 1 3.5 0l6-6M18 6c1.5-1.5 1.5-4 0-5.5s-4 0-5.5 0L9 4l3 3 3 3 3.5-3.5z"/></svg></div><h3>Charcutier</h3><p>Gérez la découpe, les rendements matière et les pertes de poids (freintes).</p></a>
-            <a href="/agroalimentaire/boulanger/" class="industry-card"><div class="card-icon"><svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 18c0 1 1.5 3 7 3s7-2 7-3c0-2-3-3-7-3s-7 1-7 3zM5 18c-1-2 0-5 2-7 1.5-1.5 3-2 5-2s3.5.5 5 2c2 2 3 5 2 7M9 9c0-2 1.5-4 3-5 1.5 1 3 3 3 5"/></svg></div><h3>Boulanger</h3><p>Planification de production centralisée et dispatch vers vos différents magasins.</p></a>
-            <a href="/agroalimentaire/maraicher/" class="industry-card"><div class="card-icon"><svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2c-1 3-4 5-4 9a4 4 0 008 0c0-4-3-6-4-9zM8 15l-2 6h12l-2-6M12 11v4m-2-2h4"/></svg></div><h3>Maraîcher</h3><p>Gérez les calibres, les origines, les agréages et les variations de prix quotidiennes.</p></a>
-            <a href="/agroalimentaire/industrie-laitiere/" class="industry-card"><div class="card-icon"><svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 2h8l1 4H7L8 2zM7 6v2c0 1-1 2-1 3v7a2 2 0 002 2h8a2 2 0 002-2v-7c0-1-1-2-1-3V6M10 12h4M10 15h4"/></svg></div><h3>Laitier</h3><p>Collecte du lait, maturation, DDM courtes et respect strict de la chaîne du froid.</p></a>
-            <a href="/agroalimentaire/plats-cuisines-industriels/" class="industry-card"><div class="card-icon"><svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 13h18M5 13c0-4 3-7 7-7s7 3 7 7M4 13v1a1 1 0 001 1h14a1 1 0 001-1v-1M8 17v2m8-2v2M6 21h12"/></svg></div><h3>Plats cuisinés</h3><p>Nomenclatures multi-niveaux, calcul des coûts de revient et étiquetage INCO.</p></a>
+            <a href="/prometheus/agroalimentaire/traiteur/" class="industry-card"><div class="card-icon"><svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2C8 2 4 4 4 8c0 2.5 2 4 4 5v1h8v-1c2-1 4-2.5 4-5 0-4-4-6-8-6zM8 16h8m-6 3h4m-2 3v-3"/></svg></div><h3>Traiteur</h3><p>Création de fiches techniques, devis complexes et logistique pour les réceptions.</p></a>
+            <a href="/prometheus/agroalimentaire/charcutier/" class="industry-card"><div class="card-icon"><svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 3l-1.5 1.5M9 9l-6 6c-1 1-1 2.5 0 3.5l2 2c1 1 2.5 1 3.5 0l6-6M18 6c1.5-1.5 1.5-4 0-5.5s-4 0-5.5 0L9 4l3 3 3 3 3.5-3.5z"/></svg></div><h3>Charcutier</h3><p>Gérez la découpe, les rendements matière et les pertes de poids (freintes).</p></a>
+            <a href="/prometheus/agroalimentaire/boulanger/" class="industry-card"><div class="card-icon"><svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 18c0 1 1.5 3 7 3s7-2 7-3c0-2-3-3-7-3s-7 1-7 3zM5 18c-1-2 0-5 2-7 1.5-1.5 3-2 5-2s3.5.5 5 2c2 2 3 5 2 7M9 9c0-2 1.5-4 3-5 1.5 1 3 3 3 5"/></svg></div><h3>Boulanger</h3><p>Planification de production centralisée et dispatch vers vos différents magasins.</p></a>
+            <a href="/prometheus/agroalimentaire/maraicher/" class="industry-card"><div class="card-icon"><svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2c-1 3-4 5-4 9a4 4 0 008 0c0-4-3-6-4-9zM8 15l-2 6h12l-2-6M12 11v4m-2-2h4"/></svg></div><h3>Maraîcher</h3><p>Gérez les calibres, les origines, les agréages et les variations de prix quotidiennes.</p></a>
+            <a href="/prometheus/agroalimentaire/industrie-laitiere/" class="industry-card"><div class="card-icon"><svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 2h8l1 4H7L8 2zM7 6v2c0 1-1 2-1 3v7a2 2 0 002 2h8a2 2 0 002-2v-7c0-1-1-2-1-3V6M10 12h4M10 15h4"/></svg></div><h3>Laitier</h3><p>Collecte du lait, maturation, DDM courtes et respect strict de la chaîne du froid.</p></a>
+            <a href="/prometheus/agroalimentaire/plats-cuisines-industriels/" class="industry-card"><div class="card-icon"><svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 13h18M5 13c0-4 3-7 7-7s7 3 7 7M4 13v1a1 1 0 001 1h14a1 1 0 001-1v-1M8 17v2m8-2v2M6 21h12"/></svg></div><h3>Plats cuisinés</h3><p>Nomenclatures multi-niveaux, calcul des coûts de revient et étiquetage INCO.</p></a>
         </div>
     </div>
 </section>'''
@@ -299,15 +299,15 @@ FOOTER = '''<!-- FOOTER -->
                 <div class="social-icons"><a href="https://www.linkedin.com/company/26042947/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a><a href="https://www.youtube.com/@HelloHarel" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a></div>
                 <p>Hello Harel est un ERP SAAS pour l\'industrie de l\'agroalimentaire. Ce logiciel vous permet de gérer l\'ensemble de votre entreprise. De la gestion des stocks à la gestion des achats en passant par la gestion relation client.</p>
             </div>
-            <div class="footer-col"><h4>Fonctionnalités</h4><ul><li><a href="/fonctionnalites/crm/">Logiciel CRM</a></li><li><a href="/fonctionnalites/facturation/">Logiciel de Facturation</a></li><li><a href="/fonctionnalites/fabrication/">Logiciel de Fabrication</a></li><li><a href="/fonctionnalites/gestion-de-stock/">Logiciel de Gestion de stock</a></li><li><a href="/fonctionnalites/vente/">Logiciel de gestion des Ventes</a></li><li><a href="/fonctionnalites/achat/">Logiciel d\'Achat</a></li><li><a href="/fonctionnalites/logistique/">Logiciel de Logistique</a></li><li><a href="/fonctionnalites/import-export/">Logiciel Import Export</a></li></ul></div>
-            <div class="footer-col"><h4>Industries</h4><ul><li><a href="/agroalimentaire/">ERP Agroalimentaire</a></li><li><a href="/agroalimentaire/boulanger/">ERP Pâtisserie – Boulangerie</a></li><li><a href="/agroalimentaire/traiteur/">ERP Traiteur</a></li><li><a href="/agroalimentaire/maraicher/">ERP Fruits et légumes</a></li><li><a href="/agroalimentaire/charcutier/">ERP Charcutier</a></li></ul></div>
-            <div class="footer-col"><h4>Informations</h4><ul><li><a href="/blog/">Blog</a></li><li><a href="/qui-sommes-nous/">Qui sommes nous ?</a></li><li><a href="/ecosysteme/">Ecosystème</a></li><li><a href="https://doc.harelsystems.io/doc/basic" target="_blank" rel="noopener">Tutoriels</a></li><li><a href="/page-sitemap.xml">Plan de site – Pages</a></li><li><a href="/post-sitemap.xml">Plan de site – Articles</a></li></ul></div>
+            <div class="footer-col"><h4>Fonctionnalités</h4><ul><li><a href="/prometheus/fonctionnalites/crm/">Logiciel CRM</a></li><li><a href="/prometheus/fonctionnalites/facturation/">Logiciel de Facturation</a></li><li><a href="/prometheus/fonctionnalites/fabrication/">Logiciel de Fabrication</a></li><li><a href="/prometheus/fonctionnalites/gestion-de-stock/">Logiciel de Gestion de stock</a></li><li><a href="/prometheus/fonctionnalites/vente/">Logiciel de gestion des Ventes</a></li><li><a href="/prometheus/fonctionnalites/achat/">Logiciel d\'Achat</a></li><li><a href="/prometheus/fonctionnalites/logistique/">Logiciel de Logistique</a></li><li><a href="/prometheus/fonctionnalites/import-export/">Logiciel Import Export</a></li></ul></div>
+            <div class="footer-col"><h4>Industries</h4><ul><li><a href="/prometheus/agroalimentaire/">ERP Agroalimentaire</a></li><li><a href="/prometheus/agroalimentaire/boulanger/">ERP Pâtisserie – Boulangerie</a></li><li><a href="/prometheus/agroalimentaire/traiteur/">ERP Traiteur</a></li><li><a href="/prometheus/agroalimentaire/maraicher/">ERP Fruits et légumes</a></li><li><a href="/prometheus/agroalimentaire/charcutier/">ERP Charcutier</a></li></ul></div>
+            <div class="footer-col"><h4>Informations</h4><ul><li><a href="/prometheus/blog/">Blog</a></li><li><a href="/prometheus/qui-sommes-nous/">Qui sommes nous ?</a></li><li><a href="/prometheus/ecosysteme/">Ecosystème</a></li><li><a href="https://doc.harelsystems.io/doc/basic" target="_blank" rel="noopener">Tutoriels</a></li><li><a href="/prometheus/page-sitemap.xml">Plan de site – Pages</a></li><li><a href="/prometheus/post-sitemap.xml">Plan de site – Articles</a></li></ul></div>
         </div>
-        <div class="footer-bottom"><a href="/mentions-legales/">Mentions légales</a><a href="/politique-de-confidentialite/">Politique de confidentialité</a><a href="/cgu/">Conditions générales d\'utilisation</a></div>
+        <div class="footer-bottom"><a href="/prometheus/mentions-legales/">Mentions légales</a><a href="/prometheus/politique-de-confidentialite/">Politique de confidentialité</a><a href="/prometheus/cgu/">Conditions générales d\'utilisation</a></div>
     </div>
 </footer>'''
 
-STICKY_CTA = '<div class="sticky-cta"><a href="/contact/">Demander une démo</a></div>'
+STICKY_CTA = '<div class="sticky-cta"><a href="/prometheus/contact/">Demander une démo</a></div>'
 
 JS = '''<script>
 document.getElementById('hamburgerBtn').addEventListener('click',function(){
@@ -331,7 +331,7 @@ def make_hero(page):
             <div class="hero-badge"><span class="dot"></span>{h["badge"]}</div>
             <h1 class="hero-title" style="color:#fff">{h["title_w"]} <span class="accent" style="color:#60a5fa">{h["title_a"]}</span></h1>
             <p class="hero-description" style="color:rgba(255,255,255,0.85)">{h["desc"]}</p>
-            <a href="/contact/" class="hero-cta" style="background:#fff;color:#1e3a8a;box-shadow:0 10px 25px rgba(0,0,0,0.3)">Contactez-nous pour une démonstration</a>
+            <a href="/prometheus/contact/" class="hero-cta" style="background:#fff;color:#1e3a8a;box-shadow:0 10px 25px rgba(0,0,0,0.3)">Contactez-nous pour une démonstration</a>
             <p class="hero-cta-sub" style="color:rgba(255,255,255,0.7)">Sans engagement. Déploiement rapide.</p>
         </div>
     </div>
