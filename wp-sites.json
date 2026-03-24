@@ -1,0 +1,8 @@
+{
+  "staging": {
+    "URL": "https://www.helloharel.com/prometheus",
+    "USER": "administration@remi-oravec.fr",
+    "PASS": "T8Yu 6UBr 1BOh H3i2 PNSw khHk",
+    "authType": "basic"
+  }
+}
